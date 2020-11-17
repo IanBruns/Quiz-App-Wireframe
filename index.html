@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Quiz App</title>
+  <link href="https:cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
+    type="text/css" />
+  <link href="app.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <h1>Oh, That's a Baseball!</h1>
+  </header>
+  <main>
+    <div class="page">
+      <h2>Are you ready to answer some Baseball Trivia?</h2>
+      <button id="startQuiz">Start</button>
+    </div>
+
+    <div class="page">
+      <h2>Question x of 5</h2>
+      <h6>The question</h6>
+      <form>
+        <div>
+          <div>
+            <input name="answer" type="radio" value="one">
+            <label for="one">Option 1</label>
+            <input name="answer" type="radio" value="two">
+            <label for="two">Option 2</label>
+          </div>
+          <div>
+            <input name="answer" type="radio" value="three">
+            <label for="three">Option 3</label>
+            <input name="answer" type="radio" value="four">
+            <label for="four">Option 4</label>
+          </div>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div class="page">
+      <h2>Correct!</h2>
+      <div class="row-shelf">
+        <p class="funFact">Here's some trivia</p>
+        <p class="score">Wins and losses here</p>
+        <p class="photo">A photo will go here</p>
+      </div>
+      <button id="nextQuestion">Next</button>
+    </div>
+
+    <div class="page">
+      <h2>Incorrect!</h2>
+      <p>The correct answer was: </p>
+      <p class="incorrectScore">Wins and losses here</p>
+      <button id="nextQuestion">Next</button>
+    </div>
+
+    <div class="page">
+      <h2>It's Over!</h2>
+      <h3>Your score: (Score %)</h3>
+      <p class="incorrectScore">Wins and losses here</p>
+      <button id="startOver">Play Again?</button>
+    </div>
+  </main>
+  <script src="https:code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
